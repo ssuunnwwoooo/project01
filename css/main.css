@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 ul {
     list-style: none;
 }
@@ -53,7 +54,7 @@ nav li.on a::after {
     margin: 0 auto 30px auto;
     border-radius: 50%;
     overflow: hidden;
-    border: 20px solid rgba(0, 0, 0, 0.2);
+    border: 20px solid rgba(255, 230, 0, 0.479);
 
     transform: translate(0, 100px);
     opacity: 0;
@@ -67,17 +68,6 @@ nav li.on a::after {
     opacity: 1;
 }
 
-.section figure::after {
-    content: "";
-    position: absolute;
-    right: 20px;
-    top: 30px;
-    width: 40px;
-    height: 20px;
-    background: green;
-    border-radius: 20px 0;
-    transform: rotate(-25deg);
-}
 
 .section figure img {
     width: 100%;
@@ -110,11 +100,16 @@ nav li.on a::after {
     opacity: 1;
 }
 
-/* 서서히 나타나는 효과 만들때 위 두 문단 참조*/
 
 .header {
     position: fixed;
-    top: 50px;
-    left: 50px;
+    top: 10px;
+    left: 10px;
     z-index: 999;
+}
+
+.header img {
+    margin: 10px;
+    width: 230px;
+    height: 100px;
 }
